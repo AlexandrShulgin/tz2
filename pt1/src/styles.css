@@ -1,0 +1,166 @@
+:root {
+  --color-primary: #877EFF;
+  --color-dark-1: #000000;
+  --color-dark-2: #121417;
+  --color-light-1: #FFFFFF;
+  --color-light-3: #7878A3;
+  --color-light-4: #5C5C7B;
+  
+  --font-body: 'Inter', sans-serif;
+  --font-semibold-20: normal 600 20px var(--font-body);
+  --font-regular-16: normal 400 16px var(--font-body);    
+}   
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  color: var(--color-light-1);
+  background-color: var(--color-dark-1);
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 30;
+  width: 100%;
+  height: 60px;
+  padding: 12px 24px;
+  background: var(--color-dark-2);
+}
+
+.wrapper {
+  display: flex;
+  padding-top: 60px;
+}
+
+.left-sidebar {
+  display: flex;
+  justify-content: center;
+  width: 240px;
+  padding: 20px;
+  background: var(--color-dark-2);
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.left-sidebar-pages {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.left-sidebar-pages > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  border-radius: 10px;
+}
+
+.selected {
+  background: var(--color-primary);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 800px;
+  padding: 40px;
+}
+
+.main-info {
+  display: flex;
+  gap: 15px;
+}
+
+.main-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.main-personal {
+  align-self: center;
+}
+
+.main-name {
+  font: var(--font-semibold-20);
+}
+
+.main-nickname {
+  font: var(--font-regular-16);
+  color: var(--color-light-4);
+}
+
+.main-contacts, .main-bio {
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--color-dark-2);
+}
+
+.label {
+  margin-bottom: 15px;
+  font: var(--font-regular-16);
+  color: var(--color-light-3);
+}
+
+.main-contacts-wrapper {
+  display: flex;
+  gap: 20px;
+  font: var(--font-regular-16);
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+}
+
+.main-contacts-contact {
+  white-space: nowrap;
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 30;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 60px;
+  padding: 12px 24px;
+  background: var(--color-dark-2);
+
+  @media (min-width: 800px) {
+    display: none;
+  }
+}
+
+.footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+}

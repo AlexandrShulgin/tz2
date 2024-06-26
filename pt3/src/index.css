@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.UserList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 50%;
+  margin: 0 auto;
+  color: white;
+}
+
+.UserList_item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 5px 5px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.UserList_item_link {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.UserProfile {
+  width: max-content;
+  padding: 30px;
+  color: white;
+  border: 1px solid white;
+}
