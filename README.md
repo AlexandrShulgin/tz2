@@ -1,4 +1,4 @@
-Тестовые задания
+Тестовые задания \n
   Pt1 HTML и CSS
     Реализация: vanilla html/css
     Запуск: cd pt1 -> npm install -> npm start
